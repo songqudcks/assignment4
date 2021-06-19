@@ -1,0 +1,48 @@
+
+.brand_tag {
+	width:30vw;
+	text-align:center;
+	display:inline-block;
+	vertical-align:middle;
+
+	border-style:solid;
+	border-width: 2vw;
+
+	padding-right: 2vw;
+	padding-left:2vw;
+	padding-top:2vh;
+}
+
+.brand_tag > div {
+	text-align:center;
+}
+
+.box {
+	width:30vw;
+	text-align:center;
+	display:inline-block;
+	vertical-align:middle;
+}
+
+.box > div {
+	text-align:center;
+}
+
+.search-blank{
+    border-radius: 25px;
+	height: 4vw;
+	width: 30vw;
+	font-family: cursive;
+	text-align: center;
+	font-weight: 500;
+	font-size: 2vw;
+}
+
+.btn {
+	border:none;
+	background:none;
+}
+
+.letters {
+	font-family: cursive;
+}

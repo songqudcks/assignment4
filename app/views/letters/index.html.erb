@@ -1,0 +1,110 @@
+<!DOCTYPE html> 
+<html>
+	<head> 
+		<%= stylesheet_link_tag "index.css" %>
+		<title>Okinawa X Kapital</title>
+	</head> 
+	<body style="background-image:url('background.png'); background-size:100%; text-align:center; background-attachment:fixed; background-repeat:repeat-y; background-position: center">
+
+	<div style="height:1vh"></div>
+	<hr/>
+	<div style="height:20vh"></div>
+
+
+
+	<div class="brand_tag">
+		<div>
+			<a href="https://music.apple.com/kr/album/okinawa/1498000141?i=1498000142">
+			<img src="Okinawa_logo.png"; width=100%>
+			</a>
+		</div>
+
+		<div style="font-family:Verdana; font-size:4vw">
+			X
+		</div>
+
+		<div>
+			<a href="https://www.kapital.jp">
+			<img src="KAPITAL_logo.png"; width=100%>
+			</a>
+		</div>
+	</div>
+
+
+
+	<div style="height:20vh"></div>
+	<hr/>
+	<div style="height:5vh"></div>
+
+
+
+	<div>
+		<h3 style="font-size:3vw; text-align:center; font-family:cursive;">
+			2018.02.14
+		</h3>
+		<h3 style="font-size:3vw; text-align:center; font-family:cursive;">
+			<a href="https://music.apple.com/kr/album/okinawa/1498000141?i=1498000142">
+			<p>92914</p>
+				</a>
+		</h3>
+	</div>
+	<div style="height:5vh"></div>
+
+
+	<div class="box">
+		<div>
+			<a href="https://www.kapital-webshop.jp/category/HAT_CAP/K2003XH505.html">
+			<img src="KAPITAL_HAT-removed.png"; width=40%>
+			</a>
+		</div>
+
+		<div>
+			<a href="https://www.kapital-webshop.jp/category/M_T_SHIRT/EK733.html">
+			<img src="KAPITAL_TSHIRT-removed.png"; width=100%>
+			</a>
+		</div>
+		
+		<div>
+			<a href="https://www.kapital-webshop.jp/category/M_PANTS_SHORTS/EK710.html">
+			<img src="KAPITAL_PANTS-removed.png"; width=90%;>
+			</a>
+		</div>
+	</div>
+
+	<div class="box">
+		<div>
+			<a href="https://www.kapital-webshop.jp/category/BAG/K2102XB519.html">
+			<img src="KAPITAL_BAG-removed.png"; width=80%>
+			</a>
+		</div>
+	</div>
+
+	<div style="height:3vh"></div>
+	
+	<div>
+		<h3 style="font-size:3vw; text-align:center; font-family:cursive;">
+			~ Leave your letter to Okinawa ~
+		</h3>
+		<form action="new" method="get">
+                    <input type="text" name="text" class="search-blank">
+                    <br>
+                    <button type="submit" class="btn"><img src="mail.png" style="width:30px"></button>
+                    </a>
+        </form>
+        
+        <br>
+        <% @letters.each do |letter| %>
+            <div class="letters">
+                <a><%= letter.text %></a>
+            </div>
+          <% end %>
+	</div>
+
+
+
+	<div style="height:3vh"></div>
+	<hr/>
+	<div style="height:2vh"></div>
+
+	</body>
+</html>
